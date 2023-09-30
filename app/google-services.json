@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080560374123",
+    "project_id": "organizze-8791d",
+    "storage_bucket": "organizze-8791d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080560374123:android:5e1b47fb2d20342df83c2e",
+        "android_client_info": {
+          "package_name": "com.stormdev.organizze"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqsiXHUCjPai8MTNTOtB-IgNOVZP4xdIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
