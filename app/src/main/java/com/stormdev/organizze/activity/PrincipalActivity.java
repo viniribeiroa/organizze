@@ -1,5 +1,6 @@
 package com.stormdev.organizze.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -20,13 +21,12 @@ import com.stormdev.organizze.R;
 
 public class PrincipalActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityPrincipalBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        /*
         binding = ActivityPrincipalBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -43,13 +43,18 @@ public class PrincipalActivity extends AppCompatActivity {
                         .setAnchorView(R.id.fab)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
+    }
+    public void adicionarDespesa(View view){
+
+        startActivity(new Intent(this, DespesasActivity.class));
+
+    }
+    public void adicionarReceita(View view){
+
+        startActivity(new Intent(this, ReceitasActivity.class));
+
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_principal);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
+
 }
